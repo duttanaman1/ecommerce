@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+body {
+  background: #282828;
+  font-family: "Open Sans", sans-serif;
+}
+.container {
+  width: 100%;
+}
+.container .content {
+  width: 500px;
+}
+.container .content .card {
+  background: #1d1e22;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.5s ease;
+  animation: start 0.9s ease 0.1s forwards;
+}
+.container .content .card:hover {
+  transition: 0.5s ease;
+  background: #576574;
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+@keyframes start {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container .content .card .shoppintcart {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.container .content .card .shoppintcart li {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: white;
+  opacity: 0;
+  animation: start 0.9s ease 1s forwards;
+}
+@keyframes start {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.container .content .card .numberproduct {
+  color: white;
+  font-weight: bold;
+}
+.container .content .card .cover img {
+  width: 450px;
+  height: auto;
+  opacity: 0;
+  transform: translateY(-25px);
+  animation: start 0.9s ease 0.4s forwards;
+}
+@keyframes start {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+}
+.container .content .card .details {
+  padding: 10px;
+}
+.container .content .card .details h1 {
+  opacity: 0;
+  font-size: 20px;
+  color: white;
+  animation: start 0.9s ease 0.5s forwards;
+}
+@keyframes start {
+  0% {
+    opacity: 0;
+    transform: translateY(-25px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-5px);
+  }
+}
+.active_love {
+  background: #ee5253 !important;
+  transition: 0.5s ease-in;
+}
+.active_cart {
+  background: #1dd1a1 !important;
+  transition: 0.5s ease-in;
+}

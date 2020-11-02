@@ -1,0 +1,39 @@
+.button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-color: rgb(0, 0, 0);
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+  font-weight: bold;
+  font-size: 18px;
+}
+.button span {
+  padding: 16px 84px;
+  background-color: rgb(255, 217, 0);
+  display: block;
+  position: relative;
+  z-index: 99;
+  transition: background-color 0.3s ease;
+}
+.button::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  border: 1px solid black;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  color: white;
+}
+.button:hover span {
+  background-color: rgb(255, 125, 4);
+}
+.button:hover::before {
+  top: 0px;
+  left: 0px;
+}
